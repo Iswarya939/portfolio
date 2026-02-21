@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iswarya S | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#internships">Internships</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Iswarya Sengottaiyan</h1>
+            <h3>And I'm a <span>Fullstack Developer & UI/UX Designer</span></h3>
+            <p>Highly organized and dedicated individual looking for a responsible role to build a career in the computer industry.</p>
+            <div class="social-media">
+                <a href="https://github.com/iswaryascsd2023-ai"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/iswarya-s-"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.behance.net/iswaryas4"><i class="fab fa-behance"></i></a>
+            </div>
+            <a href="mailto:iswaryas613@gmail.com" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="card">
+            <h2 class="heading">About <span>Me</span></h2>
+            <div class="about-summary">
+                <p>Highly organized and dedicated individual looking for a responsible role to build a career in the computer industry. Proven ability to handle multiple tasks efficiently and a strong commitment to team success. Eager to leverage my technical interests and hard-working nature to contribute to organizational growth while gaining valuable practical experience.</p>
+            </div>
+            
+            <div class="edu-details" style="margin-top: 4rem;">
+                <h3>Education</h3>
+
+                <div class="edu-item" style="margin-top: 1.5rem;">
+                    <p><strong>BE Computer Science And Design</strong> - SNS College Of Engineering (2023-2027)</p>
+                    <small class="edu-percentage">percentage: 8.50%</small>
+                </div>
+
+                <div class="edu-item" style="margin-top: 1rem;">
+                    <p><strong>HSC</strong> - GOVT Higher Secondary School (2020-2023)</p>
+                    <small class="edu-percentage">percentage: 81%</small>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="internships" id="internships">
+        <h2 class="heading">My <span>Internships</span></h2>
+        <div class="container">
+            <div class="card-item">
+                <h3>Web Development Training</h3>
+                <h4>Botroid</h4>
+                <p>In this training, I learned how to build modern websites using HTML, CSS and Javascript. I focused on making websites "responsive," which means they look great on both mobile phones and laptops. I also learned how to write neat and organized code so that the websites load fast and are easy for others to understand.</p>
+
+                <!-- ✅ Duration Added -->
+                <small class="duration">[Duration: 27.12.2024 - 20.01.2025]</small>
+            </div>
+
+            <div class="card-item">
+                <h3>UI/UX Design Training</h3>
+                <h4>Gametech</h4>
+                <p>At Gametech, I used Figma to design how an app or website should look and work. I created "wireframes" and "prototypes" to make sure the design is easy for people to use. I also learned how to choose the right colors and fonts to make the website look professional and attractive.</p>
+
+                <!-- ✅ Duration Added -->
+                <small class="duration">[Duration: 21.11.2025 - 30.12.2025]</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="card">
+            <h2 class="heading">My <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Technical Skills</h3>
+                    <p>HTML, CSS, Figma, Canva, Inkscape, Adobe Illustrator, APhotoshop</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Soft Skills</h3>
+                    <p>Hard work, Analytical, Problem solving, Time management, Continuous Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="container">
+            <div class="card-item">
+                <h3>Smart Tourist Safety Monitoring</h3>
+                <p>A web-based application designed to enhance tourist safety by monitoring location details.</p>
+                <small>Tools: HTML, CSS, JavaScript, Python, MySQL</small>
+                <br><br>
+                <button class="btn project-btn" onclick="openTouristReport()">Project Report</button>
+            </div>
+            <div class="card-item">
+                <h3>Home Therapy</h3>
+                <p>A system designed to support home therapy by offering online guidance and progress monitoring.</p>
+                <small>Tools: HTML, CSS, JavaScript, Python, MySQL</small>
+                <br><br>
+                <button class="btn project-btn" onclick="openTherapyReport()">Project Report</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="touristModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTouristReport()">&times;</span>
+            <h2 class="heading">Smart Tourist <span>Safety Monitoring</span></h2>
+            <div class="report-body">
+                <div class="report-section">
+                    <h4>Project Overview</h4>
+                    <p>Smart Tourist Safety Monitoring is a specialized web-based application designed to protect travelers by providing real-time location monitoring and immediate emergency assistance. It acts as a digital safety net, ensuring help is always accessible through a centralized online platform.</p>
+                </div>
+                <div class="report-section">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Real-time Location Tracking: Monitors tourist movements to ensure they stay within safe zones.</li>
+                        <li>Emergency Support Portal: Provides instant access to local authorities or emergency services.</li>
+                        <li>Safety Alert System: Notifies users about potential risks in their current location.</li>
+                        <li>Secure User Dashboard: Allows tourists to manage their safety profile and contact details.</li>
+                    </ul>
+                </div>
+                <div class="report-section">
+                    <h4>Technologies Used</h4>
+                    <p>Frontend: HTML, CSS, JavaScript <br> Backend: Python <br> Database: MySQL</p>
+                </div>
+                <div class="report-section">
+                    <h4>Project Goal</h4>
+                    <p>To enhance the travel experience by leveraging modern web technology to reduce safety risks and ensure tourists receive rapid support during emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="therapyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTherapyReport()">&times;</span>
+            <h2 class="heading">Home <span>Therapy Report</span></h2>
+            <div class="report-body">
+                <div class="report-section">
+                    <h4>1. Abstract (Project Overview)</h4>
+                    <p>The "Home Therapy" project addresses the critical challenge of accessing musculoskeletal (MSK) care. Many individuals suffering from chronic pain due to arthritis or injuries face barriers like high costs, travel distance, and mobility issues. Our digital platform, inspired by Hinge Health, bridges this gap by delivering evidence-based physical therapy through smartphones and computers. It empowers users to manage their recovery from home using a combination of guided exercises, wearable sensors, and virtual coaching, ultimately improving their quality of life.</p>
+                </div>
+
+                <div class="report-section">
+                    <h4>2. Industrial Vertical & Domain Technology</h4>
+                    <p>This project sits at the intersection of Healthcare and Artificial Intelligence. We leverage AI to create dynamic, personalized therapy plans that adapt to each user's pain level and recovery speed. By integrating motion-tracking technology and wearable sensors, the platform provides real-time biomechanical feedback. This ensures that users perform exercises with the correct form, maximizing treatment efficacy while minimizing the risk of further injury.</p>
+                </div>
+
+                <div class="report-section">
+                    <h4>3. Empathy (User-Centric Approach)</h4>
+                    <p>At its heart, this project is built on deep empathy for those living with daily physical exhaustion and emotional stress caused by chronic pain. We recognize that users are often balancing work and family while struggling with discomfort. Our "Empathy Map" identifies that users need expert guidance that is not time-consuming or complicated. We aim to communicate a supportive message: "We are here to help you heal on your schedule," removing the helplessness felt when clinical access is limited.</p>
+                </div>
+
+                <div class="report-section">
+                    <h4>4. Define (Problem & Solution)</h4>
+                    <p>Musculoskeletal conditions are a leading cause of disability worldwide. Traditional in-person therapy is effective but often inaccessible for rural or uninsured populations. We define our solution as a "Digital MSK Clinic" that provides high-quality video demonstrations, educational content, and a dedicated remote care team (therapists and health coaches). This model reduces barriers to entry and empowers individuals to take control of their physical function without relying solely on invasive surgery or medication.</p>
+                </div>
+
+                <div class="report-section">
+                    <h4>5. Ideate (Core Innovation)</h4>
+                    <p>During the ideation phase, we focused on making the platform scalable and intelligent. Key features include Cross-Platform Compatibility (working on iOS, Android, and Desktop) and Offline Support for low-data environments. We also conceptualized "Intelligent Motion Tracking," where the smartphone camera acts as a digital eye to monitor body posture. This phase also prioritized secure data handling, ensuring that all patient information is protected under healthcare privacy regulations like HIPAA and GDPR.</p>
+                </div>
+
+                <div class="report-section">
+                    <h4>6. Prototype & Working Mechanism</h4>
+                    <p>The project functions through a seamless digital loop: it begins with a comprehensive digital assessment of the user's symptoms and mobility. An AI engine then generates a tailored exercise plan. As the user performs the movements, real-time feedback is provided via motion sensors. All progress data is logged and reviewed by a remote team of licensed professionals who adjust the therapy plan as needed. This continuous integration of smart technology and human expertise ensures a safe and effective recovery journey.</p>
+                </div>
+
+                <div class="report-section">
+                    <h4>7. Testing, Deployment & Future Enhancements</h4>
+                    <p>The platform underwent rigorous Unit Testing for individual modules like AI algorithms and Integration Testing to ensure smooth data flow between the frontend and backend. Post-deployment, our future roadmap includes the integration of Virtual Reality (VR) for immersive exercise environments and Blockchain for ultra-secure medical data storage. We also plan to incorporate mental wellness support and gamified recovery tasks to address the emotional challenges of long-term rehabilitation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="card">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 9360349939</p>
+                <p><i class="fas fa-envelope"></i> iswaryas613@gmail.com</p>
+                <p><i class="fas fa-language"></i> Tamil, English, Japanese (currently preparing JLPT N5)</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openTouristReport() {
+            document.getElementById("touristModal").style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+        function closeTouristReport() {
+            document.getElementById("touristModal").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+        function openTherapyReport() {
+            document.getElementById("therapyModal").style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+        function closeTherapyReport() {
+            document.getElementById("therapyModal").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        window.onclick = function(event) {
+            if (event.target.className === "modal") {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    </script>
+
+</body>
+</html>
